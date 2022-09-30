@@ -1,0 +1,3 @@
+web: gunicorn mysite.wsgi —logs-file-
+worker: python manage.py
+heroku config:set DISABLE_COLLECTSTATIC=1

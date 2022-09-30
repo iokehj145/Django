@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="UK">
+<head>
+	<meta charset="UTF-8">
+	<title>веб-сторінка презентації</title>
+	<link rel="stylesheet" href="{% static '/main/img/styla.css' %}">
+	</head>
+	<body>
+        <div class="side">
+
+        <ul class="menu">
+            <li class = "menu_list"><a href="#">меню</a>
+             <ul class="menu_drop">
+                 <li><a href="index.html">Головне</a></li>
+                 <li><a href="pnevmat2.html">Пневмат</a></li>
+                 <li><a href="travmat2.html">Травматика</a></li>
+             </ul>
+             </li>
+        </ul>
+    </div>         
+        <center><h1>Травмат - це не іграшка</h1></center>
+            <center><h2>По перше щоб купити травмат у вас має бути дозвіл на це. А щоб отримати дозвіл вам повино бути 21 рік.<a href="https://guide.diia.gov.ua/view/vydacha-dozvolu-na-prydbannia-zberihannia-i-nosinnia-reiestratsiia-prystroiu-dlia-vidstrilu-patroniv-sporiadzhenykh-humovymy-chy-8c3bccca-7c9d-455d-8c80-08c86a0cf3f1">Ось інформація про це</a></h2></center>
+            <div class="dis">
+                    <div class="left"><img src="{% static 'main/img/fort19p1.jpg' %}" width="800" height="500"></div>
+                    <div class="right">
+                       <p>Хоч це найкращій варіант для самозахисту серед пістолетів. Однак краще натренуватися спочатку на пневматиці а потім перейти на травматичну зброю</p>
+                    </div>
+            </div>
+	</body>
+</html>

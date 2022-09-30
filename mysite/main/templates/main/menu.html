@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="UK">
+<head>
+    <meta charset="UTF-8">
+    <title>веб-сторінка презентації</title>
+    <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/img/style.css' %}">
+    </head>
+    <body>
+        <div class="des">
+        <ul class="menu">
+            <li class = "menu_list"><a href="#">меню</a>
+             <ul class="menu_drop">
+                 <li><a href="index.html">Головне</a></li>
+                 <li><a href="pnevmat2.html">Пневмат</a></li>
+                 <li><a href="travmat2.html">Травмат</a></li>
+             </ul>
+             </li>
+        </ul>
+        <div class="time"><h4>{{a}}</h4></div>
+    </div>        
+        {%block content%}{%endblock content%}
+    </body>
+</html>

@@ -1,0 +1,124 @@
+a {text-decoration: none;} /*Автор Ярослав Тюрин*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background:#000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7b7c7c;
+    border-radius: 8px;
+    border: 2px solid #595959;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+  background: #1d1b1b;
+}
+ul{
+	margin: 0;
+	padding: 0;
+  list-style: none;
+}
+
+.menu{
+  display: flex;
+  position: fixed;
+}
+
+.menu li{
+  width: 250px;
+  height: 50px;
+  list-style: none;
+  background: #000000;
+  position: relative;
+  transition: all 0.8s;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 27px;
+  transition: all 0.8s;
+}
+
+.menu a:hover {
+  background: #5474f8;
+}
+.menu li:first-child a {
+	border-radius:5px 5px 5px 5px;
+}
+.menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+  border-left: 14px solid transparent;
+  transition: all 0.8s;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+h1 {
+    font-family: "FreeMono", monospace;
+    font-weight: 900;
+    letter-spacing: -4px;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+    font-size: 10vmin;
+    height : 10vh;
+    width: 100%;
+    color: #000;
+    margin: 0;
+    animation: text 3s, 1;
+}
+@keyframes text {
+  0%{ color: transparent; 
+    margin-top: 100;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: transparent;
+  }
+
+  30%{letter-spacing:25px;}
+  }
+h2 {
+  color: #fff;
+  animation: text2 3s, 1;
+  letter-spacing: -1px;
+}
+@keyframes text2 {
+  0%{ color: transparent; 
+    -webkit-text-stroke-color: transparent;
+  }
+30%{letter-spacing:-10px;}
+}
+.dis {
+  display: flex;
+  justify-content: flex-start;
+  animation: dif 3s, 1;
+  margin-top: 100px;
+}
+@keyframes dif {
+  0%{ opacity: 0%; 
+    
+  }
+30%{opacity: 10%}
+  }
+p {
+  color: #fff;
+}
+.right {
+  padding-left:10px;
+  font-size: 20px;
+}
